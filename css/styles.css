@@ -372,7 +372,7 @@ content: '';
 display: block;
 width: 100%;
 height: 4px;
-background-color: #2196f3;
+background-color: var(--brand-color2);
 position: absolute;
 left: 0;
 bottom: 0;
@@ -422,7 +422,7 @@ content: '';
 display: block;
 width: 100%;
 height: 4px;
-background-color: #2196f3;
+background-color: var(--brand-color2);
 position: absolute;
 left: 0;
 bottom: 0;
@@ -914,7 +914,7 @@ padding-bottom: 27px;
 line-height: calc(16/14);
 
 text-transform: uppercase;
-color: #ffffff;
+color: var(--text-button-color);
 }
 
 .box-project-1 {
@@ -949,7 +949,7 @@ line-height: calc(28/18);
 
 letter-spacing: 0.03em;
 
-color: #FFFFFF;
+color: var(--text-button-color);
 }
 
 .backdrop {
@@ -968,7 +968,7 @@ color: #FFFFFF;
 .modal {
 width: 528px;
 height: 581px;
-  background-color: #fff;
+  background-color: var(--text-button-color);
 
   position: absolute;
   top: 50%;
@@ -993,7 +993,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-background-color: #fff;
+background-color: var(--text-button-color);
 border: 1px solid rgba(0, 0, 0, 10%);
 
 width: 30px;
@@ -1002,7 +1002,12 @@ cursor: pointer;
 }
 
 .x {
-color: #212121;
+color: var(--text-cl);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--brand-color2);
 }
 
 label {
@@ -1020,7 +1025,7 @@ outline-color: red;
 }
 
 .register-form-input::valid {
-outline-color:#2196f3;
+outline-color:var(--brand-color2);
 }
 
 .register-form-input::required {
@@ -1046,7 +1051,7 @@ text-align: center;
 letter-spacing: 0.03em;
 display: block;
 
-color: #212121;
+color: var(--text-cl);
 margin-top: 40px;
 margin-bottom: 12px;
 }
@@ -1062,7 +1067,7 @@ margin-bottom: 12px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  gap: 10px;
+  gap: 8px;
 }
 
 .register-form-btn {
@@ -1089,28 +1094,29 @@ margin-bottom: 12px;
 .register-form-input {
   width: 100%;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 4px;
   border: 1px solid #21212133;
   padding-left: 42px;
   padding-right: 42px;
     outline: transparent;
+    cursor: pointer;
 }
 
 .register-form-input:hover,
 .register-form-input:focus {
-border: 1px solid #2196f3;
+border: 1px solid var(--brand-color2);
 }
 
 .register-form-input:hover + .register-form-icon {
-  fill: #2196f3;
+  fill: var(--brand-color2);
 }
 
 .register-form-input:focus + .register-form-icon {
-  fill: #2196f3;
+  fill: var(--brand-color2);
 }
 
 .register-form-input:focus-visible {
-border: 1px solid #2196f3;
+border: 1px solid var(--brand-color2);
 }
 
 .register-form-icon {
@@ -1125,12 +1131,13 @@ border: 1px solid #2196f3;
   outline: transparent;
   border: 1px solid #21212133;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 4px;
   padding-top: 12px;
   padding-right: 16px;
   padding-left: 16px;
   padding-bottom: 12px;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .register-form-message::placeholder {
@@ -1156,6 +1163,78 @@ opacity: 0;
 }
 
 .register-form-desc {
-  font-size: 14px;
   user-select: none;
+
+font-size: 14px;
+line-height: 24px;
+
+color: var(--text-cl2);
+}
+
+.register-form-link {
+font-size: 14px;
+line-height: 24px;
+
+color: var(--brand-color2);
+}
+
+.register-form-message:hover,
+.register-form-message:focus {
+  border-color: var(--brand-color2);
+}
+
+.submit {
+display:;
+}
+
+.email {
+  display: inline-block;
+  
+}
+
+.email-input {
+height: 50px;
+width: 358px;
+border-radius: 4px;
+background-color: var(--brand-color);
+color: var(--text-button-color);
+border: 1px solid var(--text-cl2);
+padding-left: 16px;
+font-size: 16px;
+line-height: calc(20/16);
+}
+
+.email-input::placeholder {
+color: rgba(255, 255, 255, 0.6);
+
+}
+
+.email-input:hover,
+.email-input:focus {
+  border: 1px solid var(--brand-color2);
+  outline: transparent;
+}
+
+.support {
+  margin-right: 0;
+
+}
+
+.submit {
+  margin-left: 12px;
+}
+
+.text-submit {
+align-items: center;
+  display: flex;
+}
+
+.airplane {
+  fill: var(--text-button-color);
+  justify-items: center;
+  margin-left: 10px;
+}
+
+.email-input {
+
 }

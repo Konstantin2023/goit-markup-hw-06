@@ -349,7 +349,6 @@
                           <span class="register-form-label">Коментар</span>
                           <textarea name="register-form-message" class="register-form-message" rows="5" placeholder="Введіть текст"></textarea>
                         </label>
-                        
                         <label class="register-form-agreement">
                           <input class="register-form-checkbox visually-hidden" type="checkbox" name="Mailing" value="Mailing" checked required />
                           <svg class="register-form-icons" width="13" height="13">
@@ -412,14 +411,17 @@
               </li>
             </ul>
           </div>
-          <div class="social-wrapper">
+          <div class="social-wrapper support">
             <b class="accession">Підпишіться на розсилку</b>
             <form name="signup_form" autocomplete="on" novalidate>
-              <label>
-                <input type="email" name="email" placeholder="E-mail" />
+              <label class="email">
+                <input class="email-input" type="email" name="email" placeholder="E-mail" />
               </label>
-
-              <button type="submit" class="submit button">Підписатися</button>
+              <button type="submit" class="submit button"><span class="text-submit">Підписатися 
+                <svg class="airplane" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg></span>
+              </button>
             </form>
           </div>
         </div>
