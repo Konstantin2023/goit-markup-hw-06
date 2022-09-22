@@ -999,6 +999,9 @@ border: 1px solid rgba(0, 0, 0, 10%);
 width: 30px;
 height: 30px;
 cursor: pointer;
+
+transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .x {
@@ -1100,6 +1103,9 @@ margin-bottom: 12px;
   padding-right: 42px;
     outline: transparent;
     cursor: pointer;
+
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-input:hover,
@@ -1123,7 +1129,8 @@ border: 1px solid var(--brand-color2);
   position: absolute;
   bottom: 14px;
   left: 15px;
-
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-message {
@@ -1138,6 +1145,9 @@ border: 1px solid var(--brand-color2);
   padding-bottom: 12px;
   font-size: 12px;
   cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-message::placeholder {
@@ -1189,7 +1199,7 @@ display:;
 
 .email {
   display: inline-block;
-  
+
 }
 
 .email-input {
@@ -1202,6 +1212,9 @@ border: 1px solid var(--text-cl2);
 padding-left: 16px;
 font-size: 16px;
 line-height: calc(20/16);
+
+transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-input::placeholder {
