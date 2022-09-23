@@ -815,7 +815,7 @@ border-color: var(--brand-color2);
 }
 
 .social-wrapper {
-margin-right: 93px;
+
 }
 
 .social-network {
@@ -881,10 +881,11 @@ display: block;
 .footer-container {
 display: flex;
 align-items: baseline;
+justify-content: space-between;
 }
 
 .wrapper-address {
-  margin-right: 70px;
+
 }
 
 .team-wraper {
@@ -1045,13 +1046,13 @@ outline-color:var(--brand-color2);
 }
 
 .register-form-title {
-  font-family: 'Roboto';
-font-style: normal;
+
+
 font-weight: 700;
 font-size: 20px;
 line-height: calc(23/20);
 text-align: center;
-letter-spacing: 0.03em;
+
 display: block;
 
 color: var(--text-cl);
@@ -1074,16 +1075,14 @@ margin-bottom: 30px;
 .register-form-btn {
   display: block;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
 }
 
-.register-form-btn {
-  display: block;
-  margin: 0 auto;
-}
+
 
 .register-form-field {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -1230,7 +1229,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .support {
   margin-right: 0;
-width: 600px;
+
 }
 
 .submit {
@@ -1250,4 +1249,8 @@ align-items: center;
 
 .email-input {
 
+}
+
+.textaria {
+  margin-bottom: 20px;
 }
